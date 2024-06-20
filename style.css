@@ -1,0 +1,331 @@
+/* to manipulate about me text at index */
+#mydata {
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#b1 {
+  background-color: gray;
+  font-size: medium;
+  box-shadow: inset;
+}
+.hot {
+  background-color: gray;
+  font-size: medium;
+}
+
+.index {
+  padding-right: 20px;
+}
+.home {
+  text-align: center;
+  padding: 20px;
+  background-color: orangered;
+  justify-content: center;
+}
+
+/* self picture at index */
+#selfpic {
+  border-color: black;
+  border-width: 200px;
+}
+
+/* to centre the picture and the tex */
+#content1 {
+  align-items: center;
+  display: flex;
+  gap: 15rem;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* for background image at all body webpage */
+body {
+  background-image: url("https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711152000&semt=ais");
+}
+
+/* manipulate the history academic text */
+#study {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 95px;
+  margin-left: 25rem;
+  font-size: 50px;
+  width: 50%;
+  border-radius: 30px;
+}
+
+#school {
+  align-items: center;
+  width: 100%;
+}
+
+/* to make the table layout at centre */
+#acatable {
+  margin-left: 10%;
+}
+
+/* for heading text */
+.sn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+/* to setup background image for IIUM */
+#but3 {
+  background-image: url("http://127.0.0.1:5500/HTML/images/iium.jpg");
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+/* change image when hover */
+#but3:hover {
+  background-image: url("https://newsroom.iium.edu.my/wp-content/uploads/2021/09/IIUM_Official_Backdrop_2-scaled.jpg");
+  display: backgroud-image none;
+}
+
+/* to setup background image for school sam Bestari */
+#but2 {
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHWn8Y9IXshqbgxGTvzv2zboep0D1PTPY-6hXKikSo4vSJqGAxJDW5i-vDEmLo2fxPT8ZMXadyx-RQsOKze9dIURGPjgl0lo_CT_VqZqNLufzGDpgU6Ghg9j-yMsvcEmuvfxTGUAP7dNE/s320/Sambest+Logo.jpg");
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+/* change image when hover */
+#but2:hover {
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-ps7yNEaKsoJK1DOEOc9x5AVEgDnLpgtUBoxn40dQAtgEv2mgEW9h0puPxd_Guu7CgUX_nz1ub9XcASUM7WEq9CVUpP0-nXUy1oPLP7FTFdmYaqrte0Uo0vYGacqRbZednHj4tHoyt0k/s1600/IMG_3206.JPG");
+  display: background-image none;
+}
+
+/* to setup background image for school sam bagan terap */
+#but1 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/ms/8/8a/Sekolah_Agama_Menengah_Bagan_Terap.jpg");
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+/* change image when hover */
+#but1:hover {
+  background-image: url("https://4.bp.blogspot.com/-dIM7mUj0XzQ/Wa0BPWaPQTI/AAAAAAAATV4/K1muIc3tNe46nkCuY3ZTdJiMexfoXuXXACLcBGAs/s400/IMG_20170714_142715.jpg");
+  display: backgroud-image none;
+}
+
+/* family part  */
+#family1 {
+  text-align: center;
+}
+/* family part  */
+.familycircle {
+  border-radius: 50%;
+}
+/* family part for backgroud of the image */
+#c2 {
+  background-color: black;
+  width: 27rem;
+  height: 27rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 36%;
+}
+/* family part */
+.descF {
+  text-align: center;
+}
+/* family part */
+.sib {
+  background-color: black;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+/* family part */
+#sib2 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-left: 70px;
+}
+
+/* change radius of the logo */
+.butAca {
+  border-radius: 50%;
+  gap: 30px;
+}
+
+.blkg {
+  background-color: white;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* manipulate iframe radius at fav */
+iframe {
+  border-radius: 30px;
+}
+
+/* centre the recipe text */
+.Recipe {
+  text-align: center;
+}
+/* manipulate the button recipr */
+.Recipe button {
+  margin-top: 8px;
+  width: 550px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+/* manipulate the table data layout at favorite */
+#makanan td {
+  padding-left: 144px;
+}
+
+/* add border at university schedule table  */
+.unitable table, .unitable th, .unitable td {
+  border: 3px solid;
+}
+/* manipulate the schedule table */
+ .unitable {
+  margin-left: 150px;
+  width: 80%;
+  border-collapse: collapse;
+}
+/* change the height of the table header */
+.unitable th {
+  height: 70px;
+  background-color: gray;
+}
+
+/* change the height of table data */
+.unitable td {
+  width: 10%;
+  height: 40px;
+  text-align: center;
+}
+/* change the color of the table data when hover */
+.unitable td:hover {
+  background-color: rgb(23, 21, 21);
+}
+
+/* make it name of sir kabuye out when not hover */
+.ungs div {
+  display: none;
+  background-color: rgb(23, 21, 21);
+  color: white;
+}
+/* make it sir kabuye appear when hover */
+.ungs:hover div{
+  display: block;
+}
+
+/* make it name of Dr azura out when not hover */ 
+.ico div{
+   display: none;
+  background-color: rgb(23, 21, 21);
+  color: white;
+} 
+/* make it Dr Azura appear when hover */
+.ico:hover div{
+  display: block;
+}
+
+/* make it name of Dr dini out when not hover */ 
+.oop div{
+  display: none;
+  background-color: rgb(23, 21, 21);
+  color: white;
+}
+/* make it Dr dini appear when hover */
+.oop:hover div{
+  display: block;
+}
+.math div{
+  display: none;
+  background-color: rgb(23, 21, 21);
+  color: white;
+}
+.math:hover div{
+  display: block;
+}
+.ise div{
+  display: none;
+  background-color: rgb(23, 21, 21);
+  color: white;
+}
+.ise:hover div{
+  display: block;
+}
+.web div{
+  display: none;
+  background-color: rgb(23, 21, 21);
+  color: white;
+}
+.web:hover div{
+  display: block;
+}
+#tuto1 div{
+   display: none;
+  background-color: rgb(23, 21, 21);
+  color: white;
+}
+#tuto1:hover div{
+  display: block;
+}
+#tuto2 div{
+  display: none;
+  background-color: rgb(23, 21, 21);
+  color: white;
+}
+#tuto2:hover div{
+  display: block;
+}
+
+/* manipulate button at navigation bar */
+.home button{
+  border-radius: 20px;
+  width: 150px;
+  height: 30px;
+}
+
+/* button navigation change when hover */
+.home button:hover{
+  background-color: burlywood;
+}
+
+/* to make school name at centre  */
+.academic{
+  margin-left: 90px;
+}
+
+/* manipulate the contact image at contact me */
+.contact img{
+  display: inline-flex;
+  width: 300px;
+  height: 50%;
+}
+
+.contact{
+  width: 630px;
+  margin: 10px auto 10px auto;
+}
+
+/* hover for recipe button at favorite */
+.Recipe button:hover{
+  background-color: rgb(185, 131, 111);
+}
+
+/* centering the click me text */
+#touch{
+  text-align: center;
+  font-size: 20px;
+  padding: 0;
+}
