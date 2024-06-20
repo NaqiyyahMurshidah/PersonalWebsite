@@ -76,7 +76,7 @@ body {
 
 /* to setup background image for IIUM */
 #but3 {
-  background-image: url("http://127.0.0.1:5500/HTML/images/iium.jpg");
+  background-image: url("http://127.0.0.1:5500/images/iium.jpg");
   background-size: cover;
   transition: background-image 0.3s ease;
 }
