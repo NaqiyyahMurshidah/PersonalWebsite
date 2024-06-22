@@ -1,22 +1,29 @@
-/* to manipulate about me text at index */
+/* Basic styles */
+body {
+  background-image: url("https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711152000&semt=ais");
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Manipulate about me text at index */
 #mydata {
   font-size: 35px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#b1 {
+/* Buttons and text styles */
+#b1, .hot {
   background-color: gray;
   font-size: medium;
   box-shadow: inset;
-}
-.hot {
-  background-color: gray;
-  font-size: medium;
 }
 
 .index {
   padding-right: 20px;
 }
+
 .home {
   text-align: center;
   padding: 20px;
@@ -24,13 +31,13 @@
   justify-content: center;
 }
 
-/* self picture at index */
+/* Self picture at index */
 #selfpic {
   border-color: black;
   border-width: 200px;
 }
 
-/* to centre the picture and the tex */
+/* Center the picture and the text */
 #content1 {
   align-items: center;
   display: flex;
@@ -39,12 +46,7 @@
   margin-top: 40px;
 }
 
-/* for background image at all body webpage */
-body {
-  background-image: url("https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711152000&semt=ais");
-}
-
-/* manipulate the history academic text */
+/* Manipulate the history academic text */
 #study {
   display: flex;
   justify-content: center;
@@ -61,12 +63,12 @@ body {
   width: 100%;
 }
 
-/* to make the table layout at centre */
+/* Center the table layout */
 #acatable {
   margin-left: 10%;
 }
 
-/* for heading text */
+/* Heading text */
 .sn {
   display: flex;
   align-items: center;
@@ -74,51 +76,42 @@ body {
   font-size: 60px;
 }
 
-/* to setup background image for IIUM */
+/* Background images for buttons */
+#but3, #but2, #but1 {
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
 #but3 {
   background-image: url("http://127.0.0.1:5500/images/iium.jpg");
-  background-size: cover;
-  transition: background-image 0.3s ease;
 }
-/* change image when hover */
 #but3:hover {
   background-image: url("https://newsroom.iium.edu.my/wp-content/uploads/2021/09/IIUM_Official_Backdrop_2-scaled.jpg");
-  display: backgroud-image none;
 }
 
-/* to setup background image for school sam Bestari */
 #but2 {
   background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHWn8Y9IXshqbgxGTvzv2zboep0D1PTPY-6hXKikSo4vSJqGAxJDW5i-vDEmLo2fxPT8ZMXadyx-RQsOKze9dIURGPjgl0lo_CT_VqZqNLufzGDpgU6Ghg9j-yMsvcEmuvfxTGUAP7dNE/s320/Sambest+Logo.jpg");
-  background-size: cover;
-  transition: background-image 0.3s ease;
 }
-/* change image when hover */
 #but2:hover {
   background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-ps7yNEaKsoJK1DOEOc9x5AVEgDnLpgtUBoxn40dQAtgEv2mgEW9h0puPxd_Guu7CgUX_nz1ub9XcASUM7WEq9CVUpP0-nXUy1oPLP7FTFdmYaqrte0Uo0vYGacqRbZednHj4tHoyt0k/s1600/IMG_3206.JPG");
-  display: background-image none;
 }
 
-/* to setup background image for school sam bagan terap */
 #but1 {
   background-image: url("https://upload.wikimedia.org/wikipedia/ms/8/8a/Sekolah_Agama_Menengah_Bagan_Terap.jpg");
-  background-size: cover;
-  transition: background-image 0.3s ease;
 }
-/* change image when hover */
 #but1:hover {
   background-image: url("https://4.bp.blogspot.com/-dIM7mUj0XzQ/Wa0BPWaPQTI/AAAAAAAATV4/K1muIc3tNe46nkCuY3ZTdJiMexfoXuXXACLcBGAs/s400/IMG_20170714_142715.jpg");
-  display: backgroud-image none;
 }
 
-/* family part  */
-#family1 {
+/* Family section */
+#family1, .descF, .Recipe, #touch {
   text-align: center;
 }
-/* family part  */
-.familycircle {
+
+.familycircle, .butAca {
   border-radius: 50%;
 }
-/* family part for backgroud of the image */
+
 #c2 {
   background-color: black;
   width: 27rem;
@@ -127,13 +120,9 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-left: 36%;
+  margin: auto;
 }
-/* family part */
-.descF {
-  text-align: center;
-}
-/* family part */
+
 .sib {
   background-color: black;
   width: 20rem;
@@ -143,18 +132,12 @@ body {
   align-items: center;
   border-radius: 50%;
 }
-/* family part */
+
 #sib2 {
   width: 90%;
   display: flex;
   justify-content: center;
-  margin-left: 70px;
-}
-
-/* change radius of the logo */
-.butAca {
-  border-radius: 50%;
-  gap: 30px;
+  margin: auto;
 }
 
 .blkg {
@@ -167,16 +150,12 @@ body {
   border-radius: 50%;
 }
 
-/* manipulate iframe radius at fav */
+/* iframe styles */
 iframe {
   border-radius: 30px;
 }
 
-/* centre the recipe text */
-.Recipe {
-  text-align: center;
-}
-/* manipulate the button recipr */
+/* Recipe button */
 .Recipe button {
   margin-top: 8px;
   width: 550px;
@@ -184,148 +163,172 @@ iframe {
   border-radius: 10px;
 }
 
-/* manipulate the table data layout at favorite */
+.Recipe button:hover {
+  background-color: rgb(185, 131, 111);
+}
+
+/* Table styles */
 #makanan td {
   padding-left: 144px;
 }
 
-/* add border at university schedule table  */
 .unitable table, .unitable th, .unitable td {
   border: 3px solid;
 }
-/* manipulate the schedule table */
- .unitable {
-  margin-left: 150px;
+
+.unitable {
+  margin: auto;
   width: 80%;
   border-collapse: collapse;
 }
-/* change the height of the table header */
+
 .unitable th {
   height: 70px;
   background-color: gray;
 }
 
-/* change the height of table data */
 .unitable td {
   width: 10%;
   height: 40px;
   text-align: center;
 }
-/* change the color of the table data when hover */
+
 .unitable td:hover {
   background-color: rgb(23, 21, 21);
 }
 
-/* make it name of sir kabuye out when not hover */
-.ungs div {
+/* Hover effects for names */
+.ungs div, .ico div, .oop div, .math div, .ise div, .web div, #tuto1 div, #tuto2 div {
   display: none;
   background-color: rgb(23, 21, 21);
   color: white;
 }
-/* make it sir kabuye appear when hover */
-.ungs:hover div{
+
+.ungs:hover div, .ico:hover div, .oop:hover div, .math:hover div, .ise:hover div, .web:hover div, #tuto1:hover div, #tuto2:hover div {
   display: block;
 }
 
-/* make it name of Dr azura out when not hover */ 
-.ico div{
-   display: none;
-  background-color: rgb(23, 21, 21);
-  color: white;
-} 
-/* make it Dr Azura appear when hover */
-.ico:hover div{
-  display: block;
-}
-
-/* make it name of Dr dini out when not hover */ 
-.oop div{
-  display: none;
-  background-color: rgb(23, 21, 21);
-  color: white;
-}
-/* make it Dr dini appear when hover */
-.oop:hover div{
-  display: block;
-}
-.math div{
-  display: none;
-  background-color: rgb(23, 21, 21);
-  color: white;
-}
-.math:hover div{
-  display: block;
-}
-.ise div{
-  display: none;
-  background-color: rgb(23, 21, 21);
-  color: white;
-}
-.ise:hover div{
-  display: block;
-}
-.web div{
-  display: none;
-  background-color: rgb(23, 21, 21);
-  color: white;
-}
-.web:hover div{
-  display: block;
-}
-#tuto1 div{
-   display: none;
-  background-color: rgb(23, 21, 21);
-  color: white;
-}
-#tuto1:hover div{
-  display: block;
-}
-#tuto2 div{
-  display: none;
-  background-color: rgb(23, 21, 21);
-  color: white;
-}
-#tuto2:hover div{
-  display: block;
-}
-
-/* manipulate button at navigation bar */
-.home button{
+/* Navigation bar button */
+.home button {
   border-radius: 20px;
   width: 150px;
   height: 30px;
 }
 
-/* button navigation change when hover */
-.home button:hover{
+.home button:hover {
   background-color: burlywood;
 }
 
-/* to make school name at centre  */
-.academic{
+/* Center school name */
+.academic {
   margin-left: 90px;
 }
 
-/* manipulate the contact image at contact me */
-.contact img{
+/* Contact section */
+.contact img {
   display: inline-flex;
   width: 300px;
   height: 50%;
 }
 
-.contact{
-  width: 630px;
-  margin: 10px auto 10px auto;
-}
-
-/* hover for recipe button at favorite */
-.Recipe button:hover{
-  background-color: rgb(185, 131, 111);
-}
-
-/* centering the click me text */
-#touch{
+.contact {
+  width: 89rem;
+  margin: 10px auto;
   text-align: center;
-  font-size: 20px;
-  padding: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  #content1 {
+    gap: 5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #study {
+    margin-left: 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    background-color: pink;
+  }
+
+  #content1 {
+    flex-direction: column;
+    background-color: red;
+    gap: 2rem;
+  }
+
+  #c2 {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .sib {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .blkg {
+    width: 250px;
+    height: 300px;
+  }
+
+  .unitable {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #content1 {
+    margin-top: 20px;
+  }
+
+  .home button {
+    width: 100px;
+    height: 25px;
+  }
+
+  .Recipe button {
+    width: 90%;
+  }
+
+  #c2 {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .sib {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .blkg {
+    width: 200px;
+    height: 250px;
+  }
+
+  .unitable {
+    width: 100%;
+  }
+
+  #touch {
+    font-size: 16px;
+  }
 }
