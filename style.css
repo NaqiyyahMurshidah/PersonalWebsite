@@ -14,7 +14,8 @@ body {
 }
 
 /* Buttons and text styles */
-#b1, .hot {
+#b1,
+.hot {
   background-color: gray;
   font-size: medium;
   box-shadow: inset;
@@ -77,7 +78,9 @@ body {
 }
 
 /* Background images for buttons */
-#but3, #but2, #but1 {
+#but3,
+#but2,
+#but1 {
   background-size: cover;
   transition: background-image 0.3s ease;
 }
@@ -104,11 +107,15 @@ body {
 }
 
 /* Family section */
-#family1, .descF, .Recipe, #touch {
+#family1,
+.descF,
+.Recipe,
+#touch {
   text-align: center;
 }
 
-.familycircle, .butAca {
+.familycircle,
+.butAca {
   border-radius: 50%;
 }
 
@@ -172,7 +179,9 @@ iframe {
   padding-left: 144px;
 }
 
-.unitable table, .unitable th, .unitable td {
+.unitable table,
+.unitable th,
+.unitable td {
   border: 3px solid;
 }
 
@@ -198,13 +207,27 @@ iframe {
 }
 
 /* Hover effects for names */
-.ungs div, .ico div, .oop div, .math div, .ise div, .web div, #tuto1 div, #tuto2 div {
+.ungs div,
+.ico div,
+.oop div,
+.math div,
+.ise div,
+.web div,
+#tuto1 div,
+#tuto2 div {
   display: none;
   background-color: rgb(23, 21, 21);
   color: white;
 }
 
-.ungs:hover div, .ico:hover div, .oop:hover div, .math:hover div, .ise:hover div, .web:hover div, #tuto1:hover div, #tuto2:hover div {
+.ungs:hover div,
+.ico:hover div,
+.oop:hover div,
+.math:hover div,
+.ise:hover div,
+.web:hover div,
+#tuto1:hover div,
+#tuto2:hover div {
   display: block;
 }
 
@@ -236,7 +259,13 @@ iframe {
   margin: 10px auto;
   text-align: center;
 }
-
+/* index part
+ */
+#content1 img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
 /* Responsive styles */
 @media (max-width: 1024px) {
   #content1 {
@@ -244,7 +273,11 @@ iframe {
     flex-direction: column;
     text-align: center;
   }
-  
+  #content1 img {
+    border-radius: 50%;
+    max-width: 80%;
+    height: auto;
+  }
   #study {
     margin-left: 0;
     width: 80%;
@@ -253,15 +286,19 @@ iframe {
 
 @media (max-width: 768px) {
   .home {
-    background-color: pink;
+    
   }
 
   #content1 {
     flex-direction: column;
-    background-color: red;
     gap: 2rem;
   }
 
+  #content1 img {
+    border-radius: 50%;
+    max-width: 80%;
+    height: auto;
+  }
   #c2 {
     width: 20rem;
     height: 20rem;
@@ -280,6 +317,47 @@ iframe {
   .unitable {
     width: 90%;
   }
+  #mydata {
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  /* editing size my class schedule */
+  .sn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-top: 3rem;
+  }
+  /* contact paert */
+  .contact {
+    width: 20rem;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .contact img {
+    display: inline-flex;
+    width: 5rem;
+    height: auto;
+  }
+  /* //study part */
+  #study {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    border-radius: 30px;
+    
+  }
+  .butAca img {
+    width: 4rem;
+    height: 6rem;
+  }
+  .academic {
+  margin-left: 1rem;
+  font-size: smaller;
+  width: 5rem;
+}
 }
 
 @media (max-width: 480px) {
@@ -298,6 +376,12 @@ iframe {
 
   #content1 {
     margin-top: 20px;
+    background-color: red;
+  }
+  #content1 img {
+    border-radius: 50%;
+    max-width: 80%;
+    height: auto;
   }
 
   .home button {
@@ -330,5 +414,27 @@ iframe {
 
   #touch {
     font-size: 16px;
+  }
+  #mydata {
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .sn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    margin-top: 3rem;
+  }
+  /* contact paert */
+  .contact {
+    width: 20rem;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .contact img {
+    display: inline-flex;
+    width: 5rem;
+    height: auto;
   }
 }
