@@ -21,15 +21,34 @@ body {
   box-shadow: inset;
 }
 
+/* Navigation bar styles */
 .index {
-  padding-right: 20px;
+  
+  
+  padding: 10px 20px; /* Add some padding for better looks */
+  transition: color 0.2s ease-in-out; /* Add transition effect */
 }
 
 .home {
-  text-align: center;
   padding: 20px;
-  background-color: orangered;
+  background-color: #0097A7;
   justify-content: center;
+  text-align: center;
+}
+
+/* Navigation bar button */
+.home button {
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  font-size: 0.9rem;
+  color: white;
+  font-weight: bold;
+  
+}
+
+.home button:hover {
+  color: black;
+  background-color: white;
 }
 
 /* Self picture at index */
@@ -157,23 +176,6 @@ body {
   border-radius: 50%;
 }
 
-/* iframe styles */
-iframe {
-  border-radius: 30px;
-}
-
-/* Recipe button */
-.Recipe button {
-  margin-top: 8px;
-  width: 550px;
-  height: 30px;
-  border-radius: 10px;
-}
-
-.Recipe button:hover {
-  background-color: rgb(185, 131, 111);
-}
-
 /* Table styles */
 #makanan td {
   padding-left: 144px;
@@ -231,17 +233,6 @@ iframe {
   display: block;
 }
 
-/* Navigation bar button */
-.home button {
-  border-radius: 20px;
-  width: 150px;
-  height: 30px;
-}
-
-.home button:hover {
-  background-color: burlywood;
-}
-
 /* Center school name */
 .academic {
   margin-left: 90px;
@@ -286,7 +277,6 @@ iframe {
 
 @media (max-width: 768px) {
   .home {
-    
   }
 
   #content1 {
@@ -347,17 +337,16 @@ iframe {
     font-size: 2rem;
     width: 100%;
     border-radius: 30px;
-    
   }
   .butAca img {
     width: 4rem;
     height: 6rem;
   }
   .academic {
-  margin-left: 1rem;
-  font-size: smaller;
-  width: 5rem;
-}
+    margin-left: 1rem;
+    font-size: smaller;
+    width: 5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -373,10 +362,9 @@ iframe {
     padding: 10px;
     text-align: center;
   }
-/* index part */
+  /* index part */
   #content1 {
     margin-top: 20px;
-    
   }
   #content1 img {
     border-radius: 50%;
