@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*footer part*/
+      #portfolio {
+        text-align: center;
+        margin: 10rem auto auto auto;
+        font-size: 1.5rem;
+        padding: 1.4rem 0 1.4rem 0;
+        color: wheat;
+      }
+      .footerbg {
+        background-color: orangered;
+        margin-top: 5rem;
+      }
+      /*image part*/
+      #mainText {
+        text-align: center;
+        margin-top: 5rem;
+        font-size: 2rem;
+        color: black;
+      }
+      .imgContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+      img {
+        width: 92%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+      }
+      .arrow {
+        margin-top: 1rem;
+        padding: 4rem;
+        font-size: 4rem;
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+      }
+      .arrow:hover {
+        color: #fff; /* Change arrow color*/
+      }
+      .slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+      }
+      .slide {
+        display: none;
+        width: 20%;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease-in-out; /*animation*/
+        position: relative;
+      }
+      .slide.active {
+        display: block;
+        animation: slideIn 0.5s ease-in-out; /* Add animation */
+        transform: translateX(0); /* set */
+      }
+
+      #back {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      #front {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- the navigation bar  -->
+      <div class="home">
+        <a href="index.html" class="index"> <button>About me</button></a>
+        <a href="education.html" class="index">
+          <button>Past Education</button></a
+        >
+        <a href="food.html" class="index"> <button>Favourite</button></a>
+        <a href="schedule.html" class="index"><button>My schedule</button></a>
+        <a href="contact.html" class="index"><button>Contact me</button></a>
+      </div>
+    </header>
+
+    <nav>
+      <h1 id="mainText">Favourite writer</h1>
+      <div class="imgContainer">
+        <div class="slider">
+          <h1 class="arrow" id="back"><</h1>
+          <div class="slide">
+            <img src="/images/1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/2.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/3.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/4.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/5.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/6.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/7.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/8.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/9.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/10.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/11.png" alt="" />
+          </div>
+          <h1 class="arrow" id="front">></h1>
+        </div>
+      </div>
+    </nav>
+
+    <footer>
+      <div class="footerbg">
+        <h1 id="portfolio">
+          this website purposely for my webtect individual assignment. But you
+          may visit my real portfolio here
+          <a href="https://naqiyyahmurshidah.github.io/portfolio/"
+            >Murshidah Portfolio</a
+          >
+        </h1>
+      </div>
+    </footer>
+
+    <script>
+      const slider = document.querySelector(".slider");
+      const theSlide = document.querySelectorAll(".slide");
+      const backBTN = document.getElementById("back");
+      const nextBTN = document.getElementById("front");
+      let currentSlide = 0;
+
+      //show three image
+      for (let i = 0; i < 3; i++) {
+        theSlide[i].classList.add("active"); //put class active at three first image
+      }
+
+      backBTN.addEventListener("click", () => {
+        //hide the current slide by remove the active class
+        for (let i = 0; i < 3; i++) {
+          theSlide[(currentSlide + i) % theSlide.length].classList.remove(
+            "active"
+          );
+        }
+
+        currentSlide--;
+
+        //if at first image
+        if (currentSlide < 0) {
+          currentSlide = theSlide.length - 3;
+        }
+
+        //show the current slide by add the active class
+        theSlide[currentSlide].classList.add("active");
+
+        //update the visible image
+        for (let i = 0; i < 3; i++) {
+          const index = (currentSlide + i) % theSlide.length;
+          theSlide[index].classList.add("active");
+        }
+      });
+
+      nextBTN.addEventListener("click", () => {
+        //hide current slide
+        for (let i = 0; i < 3; i++) {
+          theSlide[(currentSlide + i) % theSlide.length].classList.remove(
+            "active"
+          );
+        }
+        currentSlide++;
+        //if at the last image
+        if (currentSlide >= theSlide.length - 2) {
+          currentSlide = 0;
+        }
+
+        //show new slide
+        // Update the visible slides
+        for (let i = 0; i < 3; i++) {
+          theSlide[(currentSlide + i) % theSlide.length].classList.add(
+            "active"
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
