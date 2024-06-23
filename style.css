@@ -43,6 +43,7 @@ body {
   font-size: 0.9rem;
   color: white;
   font-weight: bold;
+  cursor: pointer;
   
 }
 
@@ -126,6 +127,7 @@ body {
 }
 
 /* Family section */
+/*
 #family1,
 .descF,
 .Recipe,
@@ -174,13 +176,9 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-}
+} */
 
 /* Table styles */
-#makanan td {
-  padding-left: 144px;
-}
-
 .unitable table,
 .unitable th,
 .unitable td {
@@ -209,6 +207,7 @@ body {
 }
 
 /* Hover effects for names */
+
 .ungs div,
 .ico div,
 .oop div,
@@ -217,11 +216,12 @@ body {
 .web div,
 #tuto1 div,
 #tuto2 div {
-  display: none;
+  display: none;   /* Hide the divs when not hover */
   background-color: rgb(23, 21, 21);
   color: white;
 }
 
+/* when the div is hover */
 .ungs:hover div,
 .ico:hover div,
 .oop:hover div,
