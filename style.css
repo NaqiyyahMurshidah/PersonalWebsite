@@ -108,37 +108,39 @@ body {
 #but3 {
   background-image: url("http://127.0.0.1:5500/images/iium.jpg");
 }
-#but3:hover {
+#but3:hover { /* Change the background image when hover */
   background-image: url("https://newsroom.iium.edu.my/wp-content/uploads/2021/09/IIUM_Official_Backdrop_2-scaled.jpg");
 }
 
 #but2 {
   background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHWn8Y9IXshqbgxGTvzv2zboep0D1PTPY-6hXKikSo4vSJqGAxJDW5i-vDEmLo2fxPT8ZMXadyx-RQsOKze9dIURGPjgl0lo_CT_VqZqNLufzGDpgU6Ghg9j-yMsvcEmuvfxTGUAP7dNE/s320/Sambest+Logo.jpg");
 }
-#but2:hover {
+#but2:hover { /* Change the background image when hover */
   background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-ps7yNEaKsoJK1DOEOc9x5AVEgDnLpgtUBoxn40dQAtgEv2mgEW9h0puPxd_Guu7CgUX_nz1ub9XcASUM7WEq9CVUpP0-nXUy1oPLP7FTFdmYaqrte0Uo0vYGacqRbZednHj4tHoyt0k/s1600/IMG_3206.JPG");
 }
 
 #but1 {
   background-image: url("https://upload.wikimedia.org/wikipedia/ms/8/8a/Sekolah_Agama_Menengah_Bagan_Terap.jpg");
 }
-#but1:hover {
+#but1:hover { /* Change the background image when hover */
   background-image: url("https://4.bp.blogspot.com/-dIM7mUj0XzQ/Wa0BPWaPQTI/AAAAAAAATV4/K1muIc3tNe46nkCuY3ZTdJiMexfoXuXXACLcBGAs/s400/IMG_20170714_142715.jpg");
 }
+#touch {
+  text-align: center;
+}
+.butAca {
+  border-radius: 50%;
+}
 
+/* remove family section*/
 /* Family section */
 /*
 #family1,
 .descF,
 .Recipe,
-#touch {
-  text-align: center;
-}
+
 
 .familycircle,
-.butAca {
-  border-radius: 50%;
-}
 
 #c2 {
   background-color: black;
